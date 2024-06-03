@@ -6,6 +6,8 @@ export default {
       backgroundImage: {
         'custom-gradient':
           'linear-gradient(180deg, #EDF2FF 0%, rgba(208, 224, 255, 0.60) 45%, rgba(255, 238, 249, 0.30) 90.5%)',
+        'custom-gradient-experience':
+          'linear-gradient(180deg, #EEF4FF 0%, rgba(255, 237, 248, 0.65) 100%)',
       },
       boxShadow: {
         custom:
