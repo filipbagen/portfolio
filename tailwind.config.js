@@ -12,6 +12,8 @@ export default {
           'linear-gradient(147deg, #E8F1FF 19.73%, rgba(255, 245, 235, 0.80) 50%, rgba(255, 224, 224, 0.27) 80.27%)',
         'custom-gradient-skills':
           'linear-gradient(180deg, #FFEBF9 0%, rgba(255, 235, 249, 0.00) 100%)',
+        'custom-gradient-footer':
+          'linear-gradient(0deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(90deg, #FFF2EB 0%, #FFEBFC 50%, #E0EDFF 100%)',
       },
       boxShadow: {
         custom:
