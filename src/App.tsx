@@ -1,3 +1,5 @@
+// App.tsx
+import Layout from './components/Layout';
 import Hero from './components/Hero';
 import AboutMe from './components/AboutMe';
 import Experience from './components/Experience';
@@ -7,16 +9,16 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <main className="flex flex-col items-center gap-12 p-5 mx-auto max-w-[1440px]">
+    <Layout>
       <Hero />
-      <div className="flex flex-col gap-12 items-center max-w-6xl">
+      <div className="flex flex-col gap-12 items-center max-w-7xl">
         <AboutMe />
         <Experience />
         <Projects />
         <Skills />
         <Footer />
       </div>
-    </main>
+    </Layout>
   );
 }
 
