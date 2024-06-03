@@ -10,6 +10,8 @@ export default {
           'linear-gradient(180deg, #EEF4FF 0%, rgba(255, 237, 248, 0.65) 100%)',
         'custom-gradient-projects':
           'linear-gradient(147deg, #E8F1FF 19.73%, rgba(255, 245, 235, 0.80) 50%, rgba(255, 224, 224, 0.27) 80.27%)',
+        'custom-gradient-skills':
+          'linear-gradient(180deg, #FFEBF9 0%, rgba(255, 235, 249, 0.00) 100%)',
       },
       boxShadow: {
         custom:

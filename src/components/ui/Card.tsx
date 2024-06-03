@@ -6,7 +6,7 @@ const Card = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className="flex flex-col p-10 items-start gap-4 self-stretch rounded-3xl bg-white/80 shadow-custom"
+    className="flex flex-col p-10 items-start gap-4 self-stretch rounded-3xl bg-white/80 shadow-custom min-w-80"
     {...props}
   />
 ));
@@ -24,11 +24,7 @@ const CardTitle = React.forwardRef<
   HTMLParagraphElement,
   React.HTMLAttributes<HTMLHeadingElement>
 >(({ className, ...props }, ref) => (
-  <h5
-    ref={ref}
-    className="text-lg font-semibold tracking-tight mb-2"
-    {...props}
-  />
+  <h5 ref={ref} className="text-lg font-semibold tracking-tight" {...props} />
 ));
 CardTitle.displayName = 'CardTitle';
 
