@@ -6,7 +6,7 @@ export default function AboutMe() {
     <div>
       <Header badge="About me" title="Who Am I?" />
       <CardContainer>
-        <div className="flex gap-3">
+        <div className="flex flex-col gap-3 lg:flex-row">
           <Card>
             <img src="src/assets/memoji.png" alt="Memoji" className="h-32" />
             <CardContent>
