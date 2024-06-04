@@ -6,7 +6,7 @@ const Card = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className="flex flex-col p-10 items-start gap-4 self-stretch rounded-3xl bg-white/80 shadow-custom min-w-80"
+    className="flex flex-col p-10 items-start gap-4 self-stretch rounded-3xl bg-white/80 shadow-custom dark:shadow-customDark min-w-80 dark:bg-[#14161A]/80"
     {...props}
   />
 ));
@@ -56,7 +56,7 @@ const CardContainer = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={`flex flex-col items-start mx-auto h-fit p-3 gap-4 self-stretch rounded-3xl border border-[#89236C] border-opacity-10 bg-[#89236C] bg-opacity-5 ${className}`}
+    className={`flex flex-col items-start mx-auto h-fit p-3 gap-4 self-stretch rounded-3xl border border-[#89236C]/10 dark:border-[#233989]/10 bg-[#89236C]/5 dark:bg-[#233989]/5 ${className}`}
     {...props}
   />
 ));

@@ -1,3 +1,4 @@
+/* src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +6,15 @@
 :root {
   --color-text: #251434;
   --color-background: #f9f9f9;
+  --color-primary: #1a202c; /* Example primary color */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #e4e2df;
+    --color-background: #1a202c;
+    --color-primary: #2d3748; /* Example primary color for dark mode */
+  }
 }
 
 body {
@@ -28,12 +38,21 @@ h1 {
   font-size: 48px;
   font-weight: 600;
   line-height: 1.1;
+  color: var(--color-text);
 }
 
 h5 {
   font-size: 18px;
   font-weight: 600;
   line-height: 28px;
+  color: var(--color-text);
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--color-text);
 }
 
 /* :root {

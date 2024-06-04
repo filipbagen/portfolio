@@ -1,8 +1,8 @@
-import { Send } from 'lucide-react';
+import Button from './ui/Button';
 
 export default function Footer() {
   return (
-    <div className="flex flex-col items-center justify-center gap-16 bg-custom-gradient-footer w-full rounded-t-[56px] p-16">
+    <div className="flex flex-col items-center justify-center gap-16 bg-custom-gradient-footer dark:bg-custom-gradient-footer-dark w-full rounded-t-[56px] p-16">
       <div className="flex flex-col gap-6 items-center text-center max-w-xl">
         <h1>Let's get in Touch</h1>
         <p>
@@ -11,18 +11,7 @@ export default function Footer() {
           to get back to you!
         </p>
 
-        <div
-          className="flex items-center gap-2 w-fit py-2 px-4 transition rounded-md cursor-pointer bg-[#251434] text-white group"
-          onClick={() =>
-            (window.location.href = 'mailto:filip.bagen@gmail.com')
-          }
-        >
-          <p className="font-semibold">Contact me</p>
-          <Send
-            size={18}
-            className="transform transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
-          />
-        </div>
+        <Button />
       </div>
 
       <div className="flex gap-6 items-center justify-center">

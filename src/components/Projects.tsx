@@ -26,7 +26,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   reverse = false,
 }) => {
   return (
-    <div className={`flex flex-col ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-8 items-center`}>
+    <div
+      className={`flex flex-col ${
+        reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'
+      } gap-8 items-center`}
+    >
       <Card>
         <div className="flex flex-row justify-between w-full">
           <CardTitle>{title}</CardTitle>
@@ -60,7 +64,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
 export default function Projects() {
   return (
-    <div className="flex p-28 flex-col self-stretch rounded-[56px] bg-custom-gradient-projects w-full">
+    <div className="flex p-28 flex-col self-stretch rounded-[56px] bg-custom-gradient-projects dark:bg-custom-gradient-projects-dark w-full">
       <Header
         badge="Projects"
         title="What I Have Done"

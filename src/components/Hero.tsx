@@ -1,8 +1,8 @@
-import { Send } from 'lucide-react';
+import Button from './ui/Button';
 
 export default function Hero() {
   return (
-    <div className="w-full h-[840px] flex justify-center items-center self-stretch rounded-[56px] bg-custom-gradient">
+    <div className="w-full h-[840px] flex justify-center items-center self-stretch rounded-[56px] bg-custom-gradient dark:bg-custom-gradient-dark">
       <div className="flex gap-10">
         <div className="relative w-56 h-56">
           <div className="absolute w-56 h-56 bg-blue-200 rounded-full -top-3"></div>
@@ -23,20 +23,9 @@ export default function Hero() {
             <span className="font-semibold">ML and Web Development</span>
           </p>
 
-          <div className="w-32 h-0.5 bg-black/10 rounded-full" />
+          <div className="w-40 h-0.5 bg-black/10 dark:bg-white/10 rounded-full" />
 
-          <div
-            className="flex items-center gap-2 w-fit py-2 px-4 transition rounded-md cursor-pointer hover:bg-[#251434]/5 group"
-            onClick={() =>
-              (window.location.href = 'mailto:filip.bagen@gmail.com')
-            }
-          >
-            <p className="font-semibold">Contact me</p>
-            <Send
-              size={18}
-              className="transform transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
-            />
-          </div>
+          <Button />
         </div>
       </div>
     </div>

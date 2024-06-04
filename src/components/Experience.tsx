@@ -12,7 +12,7 @@ import {
 
 export default function Experience() {
   return (
-    <div className="flex py-28 flex-col self-stretch rounded-[56px] bg-custom-gradient-experience w-full">
+    <div className="flex py-28 flex-col self-stretch rounded-[56px] bg-custom-gradient-experience dark:bg-custom-gradient-experience-dark w-full">
       <Header badge="Experience" title="Where I have Worked" />
 
       <div className="flex flex-col gap-11 max-w-[620px] mx-auto">
