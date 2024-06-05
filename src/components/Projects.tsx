@@ -37,16 +37,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <CardTitle>{title}</CardTitle>
             <div className="flex gap-2">
               {githubLink && (
-                <a href={githubLink} target="_blank" rel="noopener noreferrer">
+                <a href={githubLink} rel="noopener noreferrer">
                   <Github size={22} />
                 </a>
               )}
               {externalLink && (
-                <a
-                  href={externalLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href={externalLink} rel="noopener noreferrer">
                   <ArrowUpRight size={22} />
                 </a>
               )}
