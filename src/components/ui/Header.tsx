@@ -8,9 +8,9 @@ interface HeaderProps {
 
 export default function Header({ badge, title, paragraph }: HeaderProps) {
   return (
-    <div className="flex flex-col items-center gap-4 w-full mb-8 md:mb-20 text-center">
+    <div className="flex flex-col items-center gap-4 w-full mb-6 md:mb-10 text-center">
       <Badge name={badge} />
-      <h1>{title}</h1>
+      <h1 className="md:text-5xl text-4xl">{title}</h1>
       <p>{paragraph}</p>
     </div>
   );

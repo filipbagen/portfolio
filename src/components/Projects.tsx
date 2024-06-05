@@ -74,19 +74,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
 export default function Projects() {
   return (
-    <div className="flex p-4 py-16 lg:px-28 flex-col self-stretch rounded-[56px] bg-custom-gradient-projects dark:bg-custom-gradient-projects-dark w-full">
+    <div className="flex p-4 md:pb-12 pt-12 md:px-12 flex-col self-stretch md:rounded-[56px] rounded-3xl bg-custom-gradient-projects dark:bg-custom-gradient-projects-dark w-full">
       <Header
         badge="Projects"
         title="What I Have Done"
         paragraph="There are the projects which I'm most proud of"
       />
 
-      <div className="flex flex-col gap-24">
+      <div className="flex flex-col md:gap-16 gap-12">
         <ProjectCard
           title="Course Finder"
           description="SaaS tool designed to streamline course selection for graduate students at Linköping University, featuring detailed course information, personalized scheduling, and social connectivity."
           skills={['Next.js', 'Typescript', 'Supabase']}
           githubLink="https://github.com/filipbagen/TDDD27_2024_course_finder_next"
+          externalLink='https://coursefinder.se'
           imgSrc="assets/course-finder.jpg"
           imgAlt="Course Finder"
         />

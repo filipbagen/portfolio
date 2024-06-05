@@ -12,10 +12,10 @@ import {
 
 export default function Experience() {
   return (
-    <div className="flex py-28 flex-col self-stretch rounded-[56px] bg-custom-gradient-experience dark:bg-custom-gradient-experience-dark w-full">
+    <div className="flex p-4 md:pb-12 pt-12 md:px-28 flex-col self-stretch md:md:rounded-[56px] rounded-3xl bg-custom-gradient-experience dark:bg-custom-gradient-experience-dark w-full">
       <Header badge="Experience" title="Where I have Worked" />
 
-      <div className="flex flex-col gap-11 max-w-[620px] mx-auto">
+      <div className="flex flex-col md:gap-11 gap-6 max-w-[620px] mx-auto">
         <CardContainer>
           <Card>
             <div className="flex flex-col w-full">
@@ -40,7 +40,7 @@ export default function Experience() {
               enhanced my skills in Python, data analysis, and QA processes.
             </CardContent>
 
-            <div className="flex gap-3">
+            <div className="flex flex-wrap gap-3">
               <Badge name="Quality Assurance" />
               <Badge name="Data Analysis" />
               <Badge name="Python" />
@@ -72,9 +72,10 @@ export default function Experience() {
               sold the event to companies.
             </CardContent>
 
-            <div className="flex gap-3">
+            <div className="flex flex-wrap gap-3">
               <Badge name="Project Management" />
-              <Badge name="Sales and Marketing" />
+              <Badge name="Sales" />
+              <Badge name="Marketing" />
             </div>
           </Card>
 
@@ -100,7 +101,7 @@ export default function Experience() {
               behind the camera and while editing.
             </CardContent>
 
-            <div className="flex gap-3">
+            <div className="flex flex-wrap gap-3">
               <Badge name="UX & UI" />
               <Badge name="Web Development" />
             </div>

@@ -2,7 +2,7 @@ import Button from './ui/Button';
 
 export default function Footer() {
   return (
-    <div className="flex flex-col items-center justify-center gap-16 bg-custom-gradient-footer dark:bg-custom-gradient-footer-dark w-full rounded-t-[56px] p-16">
+    <div className="flex flex-col items-center justify-center md:gap-16 gap-12 bg-custom-gradient-footer dark:bg-custom-gradient-footer-dark w-full md:rounded-t-[56px] rounded-t-3xl md:p-16 py-12 px-8">
       <div className="flex flex-col gap-6 items-center text-center max-w-xl">
         <h1>Let's get in Touch</h1>
         <p>

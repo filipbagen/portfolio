@@ -14,11 +14,11 @@ const SkillCard: React.FC<SkillCardProps> = ({
 }) => {
   return (
     <div className="relative text-center flex flex-col items-center max-w-xl">
-      <div className="absolute -top-8 flex w-20 h-20 flex-col justify-center items-center flex-shrink-0 rounded-full bg-white shadow-custom inset-shadow">
-        <img src={imageSrc} alt="Skill" className="w-8 h-8" />
+      <div className="absolute -top-8 flex md:w-20 md:h-20 h-16 w-16 flex-col justify-center items-center flex-shrink-0 rounded-full bg-white shadow-custom inset-shadow">
+        <img src={imageSrc} alt="Skill" className="md:w-8 md:h-8 w-6 h-6" />
       </div>
       <Card>
-        <div className="pt-6 flex flex-col items-center w-full">
+        <div className="md:pt-6 pt-3 flex flex-col items-center w-full">
           <CardTitle>{title}</CardTitle>
           <CardContent>{description}</CardContent>
         </div>

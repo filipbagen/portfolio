@@ -4,7 +4,8 @@
 @tailwind utilities;
 
 :root {
-  --color-text: #251434;
+  /* --color-text: #251434; */
+  --color-text: #4b446a;
   --color-background: #f9f9f9;
   --color-primary: #1a202c; /* Example primary color */
 }
@@ -19,8 +20,9 @@
 
 body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 1.75;
   font-weight: 400;
+  font-size: 14px;
 
   color: var(--color-text);
   background-color: var(--color-background);

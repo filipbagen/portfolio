@@ -3,14 +3,14 @@ import SkillCard from './ui/SkillCard';
 
 export default function Skills() {
   return (
-    <div className="flex p-4 py-16 lg:px-28 flex-col items-center sm:items-start bg-custom-gradient-skills dark:bg-custom-gradient-skills-dark rounded-[56px]">
+    <div className="flex p-4 py-16 md:px-12 px-4 flex-col items-center md:items-start bg-custom-gradient-skills dark:bg-custom-gradient-skills-dark md:rounded-[56px] rounded-3xl">
       <Header
         badge="Skills"
         title="What I Can Do"
         paragraph="Through the years, I've had the opportunity to learn and develop some important, fun and even unnecessary skills. Here are a few examples. "
       />
 
-      <div className="grid lg:grid-cols-2 gap-12 sm:w-full sm:mx-auto justify-items-center">
+      <div className="grid md:grid-cols-2 md:gap-10 gap-12 md:w-full md:mx-auto justify-items-center mt-8 md:mt-8">
         <SkillCard
           imageSrc="assets/emoji/robot_face.png"
           title="AI & Machine Learning "
