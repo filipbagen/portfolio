@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './ui/Header';
 import Badge from './ui/Badge';
 import { Github, ArrowUpRight } from 'lucide-react';
-import { Card, CardContent, CardTitle } from './ui/Card';
+import { Card, CardContainer, CardContent, CardTitle } from './ui/Card';
 
 interface ProjectCardProps {
   title: string;
@@ -60,11 +60,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       </div>
 
       <div className="md:w-[45%]">
-        <img
-          src={imgSrc}
-          alt={imgAlt}
-          className="w-full object-contain rounded-xl"
-        />
+        <CardContainer>
+          <img
+            src={imgSrc}
+            alt={imgAlt}
+            className="w-full object-contain rounded-xl"
+          />
+        </CardContainer>
       </div>
     </div>
   );
