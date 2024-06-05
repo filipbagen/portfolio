@@ -98,7 +98,7 @@ export default function Projects() {
           description="Currently developing a Fair Management SaaS Platform designed to streamline expo and fair organization, featuring event creation, vendor coordination, attendee management, promotional activities, and real-time analytics."
           skills={['Next.js', 'Convex DB', 'Tailwind']}
           githubLink="https://github.com/denmo530/fairify"
-          imgSrc="public/assets/course-finder.jpg"
+          imgSrc="public/assets/event-app.jpg"
           imgAlt="Fair Managment App"
           reverse
         />
@@ -108,7 +108,7 @@ export default function Projects() {
           description="Analyzed PGA Tour data from 2010-2017 using machine learning models (Random Forest and SVM) to predict tournament winners and identify key performance metrics, achieving a maximum prediction accuracy of 91%."
           skills={['Python', 'Machine Learning', 'Feature Importance']}
           githubLink="https://github.com/filipbagen/golf-performance-analysis"
-          imgSrc="public/assets/course-finder.jpg"
+          imgSrc="public/assets/golf-analysis.jpg"
           imgAlt="Golf Performance Analysis"
         />
       </div>
