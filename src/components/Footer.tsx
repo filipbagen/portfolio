@@ -15,8 +15,8 @@ export default function Footer() {
       </div>
 
       <div className="flex gap-6 items-center justify-center">
-        <img src="src/assets/github.svg" alt="GitHub" className="h-8" />
-        <img src="src/assets/linkedin.svg" alt="LinkedIn" className="h-8" />
+        <img src="public/assets/github.svg" alt="GitHub" className="h-8" />
+        <img src="public/assets/linkedin.svg" alt="LinkedIn" className="h-8" />
       </div>
     </div>
   );

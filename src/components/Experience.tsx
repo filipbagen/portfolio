@@ -102,7 +102,7 @@ export default function Experience() {
         </CardContainer>
 
         <a
-          href="src/assets/doc/resume.pdf"
+          href="public/assets/doc/resume.pdf"
           target="_blank"
           className="flex items-center gap-2 w-fit py-2 px-4 transition rounded-md cursor-pointer hover:bg-[#251434]/5 group font-semibold"
         >
