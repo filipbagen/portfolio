@@ -20,10 +20,65 @@ export default function Experience() {
           <Card>
             <div className="flex flex-col w-full">
               <div className="flex justify-between">
-                <CardTitle>Designer & Front End developer</CardTitle>
-                <a href="">
+                <CardTitle>Summer Internship</CardTitle>
+                <a href="https://www.devant.ai">
                   <ArrowUpRight strokeWidth={3} />
                 </a>
+              </div>
+              <CardDescription>Devant • JUN 2024 — PRESENT</CardDescription>
+            </div>
+
+            <CardContent>
+              At Deviant, I support the development of high-quality synthetic
+              data for Machine Learning. My tasks includes writing scripts to
+              analyze output metadata, visualizing metadata over images for
+              quality assurance, automating tests to catch potential issues, and
+              training neural networks to predict metadata accuracy. This role
+              enhanced my skills in Python, data analysis, and QA processes.
+            </CardContent>
+
+            <div className="flex gap-3">
+              <Badge name="Quality Assurance" />
+              <Badge name="Data Analysis" />
+              <Badge name="Python" />
+            </div>
+          </Card>
+
+          <Card>
+            <div className="flex flex-col w-full">
+              <div className="flex justify-between">
+                <CardTitle>Project Manager</CardTitle>
+                <a href="https://www.medieteknikdagen.se">
+                  <ArrowUpRight strokeWidth={3} />
+                </a>
+              </div>
+              <CardDescription>
+                Media Technology Day • APR 2022 — DEC 2022
+              </CardDescription>
+            </div>
+
+            <CardContent>
+              I managed the work fair for our program, leading a team of ten
+              colleagues using agile methodologies. By encouraging innovative
+              thinking and developing our own processes, we set a new income
+              record while reducing the project timeframe from six months to
+              three. I contributed to pricing strategy development and actively
+              sold the event to companies.
+            </CardContent>
+
+            <div className="flex gap-3">
+              <Badge name="Project Management" />
+              <Badge name="Sales and Marketing" />
+            </div>
+          </Card>
+
+          <Card>
+            <div className="flex flex-col w-full">
+              <div className="flex justify-between">
+                <CardTitle>Designer & Front-End Developer</CardTitle>
+                {/* <a href="">
+                  <ArrowUpRight strokeWidth={3} />
+                </a> */}
               </div>
               <CardDescription>
                 Unga Utvecklare • MAY 2016 — DEC 2020
@@ -40,72 +95,15 @@ export default function Experience() {
             </CardContent>
 
             <div className="flex gap-3">
-              <Badge name="Typescript" />
-              <Badge name="React" />
-              <Badge name="Javascript" />
-            </div>
-          </Card>
-
-          <Card>
-            <div className="flex flex-col w-full">
-              <div className="flex justify-between">
-                <CardTitle>Programming Tutor</CardTitle>
-                <a href="">
-                  <ArrowUpRight strokeWidth={3} />
-                </a>
-              </div>
-              <CardDescription>
-                Linköping University • SEP 2021 — JUN 2022
-              </CardDescription>
-            </div>
-
-            <CardContent>
-              I was a part of a student-managed project which helps other
-              students with programming. I helped students with programming
-              questions about JavaScript, C++, MATLAB, OpenGL and Java.
-            </CardContent>
-
-            <div className="flex gap-3">
-              <Badge name="Typescript" />
-              <Badge name="React" />
-              <Badge name="Javascript" />
-            </div>
-          </Card>
-
-          <Card>
-            <div className="flex flex-col w-full">
-              <div className="flex justify-between">
-                <CardTitle>Project Manager</CardTitle>
-                <a href="">
-                  <ArrowUpRight strokeWidth={3} />
-                </a>
-              </div>
-              <CardDescription>
-                Media Technology Day • APR 2022 — DEC 2022
-              </CardDescription>
-            </div>
-
-            <CardContent>
-              I managed the work fair for our program by implementing an agile
-              method with ten colleagues My key strategy was to think
-              innovatively and not rely on decisions and plannings from earlier
-              years to encourage the development of our own work process. We
-              achieved an all time income record while at the same time cut the
-              working time-frame in half (3 months compared to 6 months). I was
-              involved in developing pricing strategies and I actively sold the
-              product to companies.
-            </CardContent>
-
-            <div className="flex gap-3">
-              <Badge name="Typescript" />
-              <Badge name="React" />
-              <Badge name="Javascript" />
+              <Badge name="UX & UI" />
+              <Badge name="Web Development" />
             </div>
           </Card>
         </CardContainer>
 
-        {/* <a
-          href=""
+        <a
+          href="src/assets/doc/resume.pdf"
+          target="_blank"
           className="flex items-center gap-2 w-fit py-2 px-4 transition rounded-md cursor-pointer hover:bg-[#251434]/5 group font-semibold"
         >
           View full resume
@@ -113,7 +111,7 @@ export default function Experience() {
             strokeWidth={3}
             className="transform transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
           />
-        </a> */}
+        </a>
       </div>
     </div>
   );

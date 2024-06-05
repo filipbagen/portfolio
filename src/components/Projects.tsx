@@ -31,33 +31,45 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'
       } gap-8 items-center`}
     >
-      <Card>
-        <div className="flex flex-row justify-between w-full">
-          <CardTitle>{title}</CardTitle>
-          <div className="flex gap-2">
-            {githubLink && (
-              <a href={githubLink} target="_blank" rel="noopener noreferrer">
-                <Github size={22} />
-              </a>
-            )}
-            {externalLink && (
-              <a href={externalLink} target="_blank" rel="noopener noreferrer">
-                <ArrowUpRight size={22} />
-              </a>
-            )}
+      <div className="flex-1">
+        <Card className="h-auto">
+          <div className="flex flex-row justify-between w-full">
+            <CardTitle>{title}</CardTitle>
+            <div className="flex gap-2">
+              {githubLink && (
+                <a href={githubLink} target="_blank" rel="noopener noreferrer">
+                  <Github size={22} />
+                </a>
+              )}
+              {externalLink && (
+                <a
+                  href={externalLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ArrowUpRight size={22} />
+                </a>
+              )}
+            </div>
           </div>
-        </div>
 
-        <CardContent>{description}</CardContent>
+          <CardContent>{description}</CardContent>
 
-        <div className="flex gap-3">
-          {skills.map((skill, index) => (
-            <Badge key={index} name={skill} />
-          ))}
-        </div>
-      </Card>
+          <div className="flex gap-3">
+            {skills.map((skill, index) => (
+              <Badge key={index} name={skill} />
+            ))}
+          </div>
+        </Card>
+      </div>
 
-      <img src={imgSrc} alt={imgAlt} className="w-96 object-contain" />
+      <div className="w-[45%]">
+        <img
+          src={imgSrc}
+          alt={imgAlt}
+          className="w-full object-contain rounded-xl"
+        />
+      </div>
     </div>
   );
 };
@@ -73,32 +85,31 @@ export default function Projects() {
 
       <div className="flex flex-col gap-24">
         <ProjectCard
-          title="Firebase Authentication"
-          description="I developed a custom Firebase Authentication solution for a company-school fair platform, enabling companies to create an account, book their booth with various accessories, sign contracts and providing admins with features like revenue tracking, display of all participating companies and invoice generation."
-          skills={['Typescript', 'React', 'Javascript']}
-          githubLink="https://github.com/your-repo"
-          externalLink="https://your-project-link.com"
-          imgSrc="src/assets/image.png"
-          imgAlt="Firebase Authentication Project"
+          title="Course Finder"
+          description="SaaS tool designed to streamline course selection for graduate students at Linköping University, featuring detailed course information, personalized scheduling, and social connectivity."
+          skills={['Next.js', 'Typescript', 'Supabase']}
+          githubLink="https://github.com/filipbagen/TDDD27_2024_course_finder_next"
+          imgSrc="src/assets/course-finder.jpg"
+          imgAlt="Course Finder"
         />
+
         <ProjectCard
-          title="Firebase Authentication"
-          description="I developed a custom Firebase Authentication solution for a company-school fair platform, enabling companies to create an account, book their booth with various accessories, sign contracts and providing admins with features like revenue tracking, display of all participating companies and invoice generation."
-          skills={['Typescript', 'React', 'Javascript']}
-          githubLink="https://github.com/your-repo"
-          externalLink="https://your-project-link.com"
-          imgSrc="src/assets/image.png"
-          imgAlt="Firebase Authentication Project"
+          title="Fair Management App"
+          description="Currently developing a Fair Management SaaS Platform designed to streamline expo and fair organization, featuring event creation, vendor coordination, attendee management, promotional activities, and real-time analytics."
+          skills={['Next.js', 'Convex DB', 'Tailwind']}
+          githubLink="https://github.com/denmo530/fairify"
+          imgSrc="src/assets/course-finder.jpg"
+          imgAlt="Fair Managment App"
           reverse
         />
+
         <ProjectCard
-          title="Firebase Authentication"
-          description="I developed a custom Firebase Authentication solution for a company-school fair platform, enabling companies to create an account, book their booth with various accessories, sign contracts and providing admins with features like revenue tracking, display of all participating companies and invoice generation."
-          skills={['Typescript', 'React', 'Javascript']}
-          githubLink="https://github.com/your-repo"
-          externalLink="https://your-project-link.com"
-          imgSrc="src/assets/image.png"
-          imgAlt="Firebase Authentication Project"
+          title="Golf Performance Analysis"
+          description="Analyzed PGA Tour data from 2010-2017 using machine learning models (Random Forest and SVM) to predict tournament winners and identify key performance metrics, achieving a maximum prediction accuracy of 91%."
+          skills={['Python', 'Machine Learning', 'Feature Importance']}
+          githubLink="https://github.com/filipbagen/golf-performance-analysis"
+          imgSrc="src/assets/course-finder.jpg"
+          imgAlt="Golf Performance Analysis"
         />
       </div>
     </div>
