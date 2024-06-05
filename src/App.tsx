@@ -11,7 +11,8 @@ function App() {
   return (
     <Layout>
       <Hero />
-      <div className="flex flex-col gap-12 items-center max-w-7xl">
+      {/* <div className="flex flex-col gap-12 items-center max-w-7xl"> */}
+      <div className="flex flex-col gap-12 items-center px-5 pt-5 mx-auto max-w-7xl">
         <AboutMe />
         <Experience />
         <Projects />
