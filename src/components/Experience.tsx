@@ -21,7 +21,10 @@ export default function Experience() {
             <div className="flex flex-col w-full">
               <div className="flex justify-between">
                 <CardTitle>Summer Internship</CardTitle>
-                <a href="https://www.devant.ai">
+                <a
+                  href="https://www.devant.ai"
+                  className="p-2 hover:translate-x-1 hover:-translate-y-1 transition rounded-md"
+                >
                   <ArrowUpRight strokeWidth={3} />
                 </a>
               </div>
@@ -48,7 +51,10 @@ export default function Experience() {
             <div className="flex flex-col w-full">
               <div className="flex justify-between">
                 <CardTitle>Project Manager</CardTitle>
-                <a href="https://www.medieteknikdagen.se">
+                <a
+                  href="https://www.medieteknikdagen.se"
+                  className="p-2 hover:translate-x-1 hover:-translate-y-1 transition rounded-md"
+                >
                   <ArrowUpRight strokeWidth={3} />
                 </a>
               </div>
