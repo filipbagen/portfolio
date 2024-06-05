@@ -9,14 +9,14 @@ export default function Hero() {
           <div className="relative w-full h-full rounded-full overflow-hidden">
             <img
               className="w-full h-full"
-              src="public/assets/profile.png"
+              src="assets/profile.png"
               alt="Profile"
             />
           </div>
         </div>
 
         <div className="flex flex-col justify-center gap-3 w-[385px]">
-          <object data="public/assets/signature.svg" width="292" height="84" />
+          <object data="assets/signature.svg" width="292" height="84" />
           <p>
             I am a <span className="font-semibold">creative and curious</span>{' '}
             tech geek, in the M.Sc. program in Computer Science, with a major in{' '}

@@ -8,7 +8,7 @@ export default function AboutMe() {
       <CardContainer>
         <div className="flex flex-col gap-3 lg:flex-row">
           <Card>
-            <img src="public/assets/memoji.png" alt="Memoji" className="h-32" />
+            <img src="assets/memoji.png" alt="Memoji" className="h-32" />
             <CardContent>
               Hey there — my name is Filip and I'm a soon-to-be engineer in
               Computer Science, living in Sweden. I am an eager, creative, and

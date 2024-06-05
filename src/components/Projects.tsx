@@ -85,7 +85,7 @@ export default function Projects() {
           description="SaaS tool designed to streamline course selection for graduate students at Linköping University, featuring detailed course information, personalized scheduling, and social connectivity."
           skills={['Next.js', 'Typescript', 'Supabase']}
           githubLink="https://github.com/filipbagen/TDDD27_2024_course_finder_next"
-          imgSrc="public/assets/course-finder.jpg"
+          imgSrc="assets/course-finder.jpg"
           imgAlt="Course Finder"
         />
 
@@ -94,7 +94,7 @@ export default function Projects() {
           description="Currently developing a Fair Management SaaS Platform designed to streamline expo and fair organization, featuring event creation, vendor coordination, attendee management, promotional activities, and real-time analytics."
           skills={['Next.js', 'Convex DB', 'Tailwind']}
           githubLink="https://github.com/denmo530/fairify"
-          imgSrc="public/assets/event-app.jpg"
+          imgSrc="assets/event-app.jpg"
           imgAlt="Fair Managment App"
           reverse
         />
@@ -104,7 +104,7 @@ export default function Projects() {
           description="Analyzed PGA Tour data from 2010-2017 using machine learning models (Random Forest and SVM) to predict tournament winners and identify key performance metrics, achieving a maximum prediction accuracy of 91%."
           skills={['Python', 'Machine Learning', 'Feature Importance']}
           githubLink="https://github.com/filipbagen/golf-performance-analysis"
-          imgSrc="public/assets/golf-analysis.jpg"
+          imgSrc="assets/golf-analysis.jpg"
           imgAlt="Golf Performance Analysis"
         />
       </div>
