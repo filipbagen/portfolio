@@ -3,7 +3,7 @@ import SkillCard from './ui/SkillCard';
 
 export default function Skills() {
   return (
-    <div className="flex flex-col items-center sm:items-start bg-custom-gradient-skills dark:bg-custom-gradient-skills-dark rounded-[56px] p-28">
+    <div className="flex p-4 py-16 lg:px-28 flex-col items-center sm:items-start bg-custom-gradient-skills dark:bg-custom-gradient-skills-dark rounded-[56px]">
       <Header
         badge="Skills"
         title="What I Can Do"

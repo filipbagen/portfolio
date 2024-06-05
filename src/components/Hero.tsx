@@ -3,7 +3,7 @@ import Button from './ui/Button';
 export default function Hero() {
   return (
     <div className="w-full h-[840px] flex justify-center items-center self-stretch rounded-[56px] bg-custom-gradient dark:bg-custom-gradient-dark">
-      <div className="flex gap-10">
+      <div className="flex gap-10 flex-col md:flex-row items-center">
         <div className="relative w-56 h-56">
           <div className="absolute w-56 h-56 bg-blue-200 rounded-full -top-3"></div>
           <div className="relative w-full h-full rounded-full overflow-hidden">
@@ -15,9 +15,9 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center gap-3 w-[385px]">
+        <div className="flex flex-col items-center justify-center gap-3 w-[385px] md:items-start">
           <object data="assets/signature.svg" width="292" height="84" />
-          <p>
+          <p className="text-center md:text-start">
             I am a <span className="font-semibold">creative and curious</span>{' '}
             tech geek, in the M.Sc. program in Computer Science, with a major in{' '}
             <span className="font-semibold">ML and Web Development</span>
