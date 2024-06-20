@@ -27,6 +27,11 @@ jobs:
       - name: Build project
         run: pnpm run build
 
+      - name: Configure Git
+        run: |
+          git config --global user.email "filip.bagen@gmail.com"
+          git config --global user.name "Filip Bägén"
+
       - name: Deploy to GitHub Pages
         run: pnpm run deploy
         env:
