@@ -19,9 +19,11 @@ export default function Hero() {
           <object data="assets/signature.svg" width="292" height="84" />
           <p className="text-center md:text-start">
             I am a <span className="font-semibold">creative and curious</span>{' '}
-            tech geek, in the M.Sc. program in Computer Science, with a major in{' '}
+            tech geek in the M.Sc. program in Computer Science, majoring in{' '}
             <span className="font-semibold">ML and Web Development</span>
           </p>
+
+          {/* I am a creative and curious tech geek in the M.Sc. program in Computer Science, majoring in ML and Web Development. */}
 
           <div className="w-40 h-0.5 bg-black/10 dark:bg-white/10 rounded-full" />
 

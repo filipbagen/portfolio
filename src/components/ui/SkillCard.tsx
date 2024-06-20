@@ -18,7 +18,7 @@ const SkillCard: React.FC<SkillCardProps> = ({
         <img src={imageSrc} alt="Skill" className="md:w-8 md:h-8 w-6 h-6" />
       </div>
       <Card>
-        <div className="md:pt-6 pt-3 flex flex-col items-center w-full">
+        <div className="md:pt-10 pt-5 flex flex-col items-center w-full">
           <CardTitle>{title}</CardTitle>
           <CardContent>{description}</CardContent>
         </div>

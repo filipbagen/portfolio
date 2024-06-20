@@ -78,7 +78,7 @@ export default function Projects() {
       <Header
         badge="Projects"
         title="What I Have Done"
-        paragraph="There are the projects which I'm most proud of"
+        paragraph="These are my most recent projects that I'm most proud of."
       />
 
       <div className="flex flex-col md:gap-16 gap-12">
@@ -87,14 +87,14 @@ export default function Projects() {
           description="SaaS tool designed to streamline course selection for graduate students at Linköping University, featuring detailed course information, personalized scheduling, and social connectivity."
           skills={['Next.js', 'Typescript', 'Supabase']}
           githubLink="https://github.com/filipbagen/TDDD27_2024_course_finder_next"
-          externalLink='https://coursefinder.se'
+          externalLink="https://coursefinder.se"
           imgSrc="assets/course-finder.jpg"
           imgAlt="Course Finder"
         />
 
         <ProjectCard
           title="Fair Management App"
-          description="Currently developing a Fair Management SaaS Platform designed to streamline expo and fair organization, featuring event creation, vendor coordination, attendee management, promotional activities, and real-time analytics."
+          description="Currently developing a Fair Management SaaS platform designed to streamline expo and fair organization, featuring event creation, vendor coordination, attendee management, promotional activities, and real-time analytics."
           skills={['Next.js', 'Convex DB', 'Tailwind']}
           githubLink="https://github.com/denmo530/fairify"
           imgSrc="assets/event-app.jpg"

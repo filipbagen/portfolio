@@ -32,7 +32,7 @@ export default function Experience() {
             </div>
 
             <CardContent>
-              At Deviant, I support the development of high-quality synthetic
+              At Devant, I support the development of high-quality synthetic
               data for Machine Learning. My tasks includes writing scripts to
               analyze output metadata, visualizing metadata over images for
               quality assurance, automating tests to catch potential issues, and
@@ -64,7 +64,7 @@ export default function Experience() {
             </div>
 
             <CardContent>
-              I managed the work fair for our program, leading a team of ten
+              I managed the work fair for our program, leading a team of 14
               colleagues using agile methodologies. By encouraging innovative
               thinking and developing our own processes, we set a new income
               record while reducing the project timeframe from six months to

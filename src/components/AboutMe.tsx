@@ -26,13 +26,13 @@ export default function AboutMe() {
               <span className="font-semibold">Artificial Intelligence</span>{' '}
               offers and I've found that my passion for{' '}
               <span className="font-semibold">Web Development</span> and{' '}
-              <span className="font-semibold">AI</span>
+              <span className="font-semibold">AI </span>
               perfectly complements my love for technology.
               <br />
               <br />
               When I'm not studying, I{' '}
               <span className="font-semibold">
-                build my own full-stack applications
+                build my own full-stack applications{' '}
               </span>
               using my skills in <span className="font-semibold">UX</span>,{' '}
               <span className="font-semibold">AI</span>, and{' '}
@@ -43,7 +43,7 @@ export default function AboutMe() {
               <span className="font-semibold">software</span> and{' '}
               <span className="font-semibold">science</span>. My focus is to
               broaden my knowledge in the implementation of new innovations and
-              <span className="font-semibold">technological creations</span>.
+              <span className="font-semibold"> technological creations</span>.
             </CardContent>
           </Card>
 
