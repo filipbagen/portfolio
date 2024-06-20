@@ -14,23 +14,19 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v2
         with:
-          node-version: '18'
-
-      - name: Install pnpm
-        run: npm install -g pnpm
+          node-version: '14'
 
       - name: Install dependencies
-        run: pnpm install
+        run: |
+          curl -L https://raw.githubusercontent.com/pnpm/self-installer/master/install.js | node
+          pnpm install
 
       - name: Build project
         run: pnpm run build
 
       - name: Deploy to GitHub Pages
+        run: pnpm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git config --global user.email "filip.bagen@gmail.com"
-          git config --global user.name "filipbagen"
-          pnpm run deploy
