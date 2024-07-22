@@ -17,11 +17,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18.x'
-          cache: 'pnpm'
 
       - name: Install pnpm
         run: |
           npm install -g pnpm
+          export PATH=$(npm bin -g):$PATH
           pnpm install
 
       - name: Build the project
