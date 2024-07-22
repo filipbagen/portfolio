@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import Header from './ui/Header';
 import Badge from './ui/Badge';
 import { Github, ArrowUpRight } from 'lucide-react';
@@ -111,6 +113,17 @@ export default function Projects() {
           imgAlt="Golf Performance Analysis"
         />
       </div>
+
+      <Link
+        to="/archive"
+        className="flex items-center gap-2 w-fit py-2 px-4 transition rounded-md cursor-pointer hover:bg-[#251434]/5 group font-semibold"
+      >
+        View Full Project Archive
+        <ArrowUpRight
+          strokeWidth={3}
+          className="transform transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
+        />
+      </Link>
     </div>
   );
 }
