@@ -19,9 +19,9 @@ jobs:
           node-version: '18.x'
           cache: 'pnpm'
 
-      - name: Install dependencies
+      - name: Install pnpm
         run: |
-          curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm@6
+          npm install -g pnpm
           pnpm install
 
       - name: Build the project
