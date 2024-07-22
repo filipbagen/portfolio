@@ -15,20 +15,87 @@ import Badge from './ui/Badge';
 // Define your data in a JSON-like structure
 const projects = [
   {
-    year: '2020',
-    name: 'Project 1',
-    company: 'Company 1',
-    builtWith: ['React', 'Typescript'],
-    link: 'website.com',
+    year: '2024',
+    name: 'Course Finder',
+    company: 'Personal Project',
+    builtWith: ['Next.js', 'Typescript', 'Supabase'],
+    link: 'https://www.coursefinder.se',
+    displayLink: 'coursefinder.se',
   },
   {
-    year: '2021',
-    name: 'Project 2',
-    company: 'Company 2',
-    builtWith: ['Vue', 'JavaScript'],
-    link: 'anotherwebsite.com',
+    year: '2024',
+    name: 'Fair Management App',
+    company: 'Personal Project',
+    builtWith: ['Next.js', 'Convex DB', 'Tailwind CSS'],
+    link: '',
+    displayLink: '',
   },
-  // Add more project objects as needed
+  {
+    year: '2024',
+    name: 'Golf Performance Analysis',
+    company: 'School Project',
+    builtWith: ['Python', 'Machine Learning', 'Feature Importance'],
+    link: 'https://github.com/filipbagen/golf-performance-analysis',
+    displayLink: 'Github',
+  },
+  {
+    year: '2024',
+    name: 'emelielarsson.se',
+    company: 'Freelance Work',
+    builtWith: ['React', 'Tailwind CSS'],
+    link: 'https://emelielarsson.se',
+    displayLink: 'emelielarsson.se',
+  },
+  {
+    year: '2023',
+    name: 'Facial Recognition',
+    company: 'School Project',
+    builtWith: ['PCA', 'SVM', 'Eigenfaces'],
+    link: 'https://github.com/filipbagen/facial-recognition',
+    displayLink: 'Github',
+  },
+  {
+    year: '2023',
+    name: 'Rocket Simulation',
+    company: 'School Project',
+    builtWith: ['Three.js', 'RK4', 'Physics'],
+    link: 'https://github.com/filipbagen/rocket-simulation',
+    displayLink: 'Github',
+  },
+
+  {
+    year: '2023',
+    name: 'Virtual Guide',
+    company: 'School Project',
+    builtWith: ['Python', 'Hugging Face', 'pyqt6'],
+    link: 'https://github.com/filipbagen/virtual-guide',
+    displayLink: 'Github',
+  },
+  {
+    year: '2022',
+    name: 'Looks & Books',
+    company: 'Freelance Work',
+    builtWith: ['React', 'Typescript'],
+    link: 'https://looksandbooks.se',
+    displayLink: 'looksandbooks.se',
+  },
+  {
+    year: '2022',
+    name: 'Personal Website v1',
+    company: 'Personal Project',
+    builtWith: ['React', 'Styled Components'],
+    link: 'https://github.com/filipbagen/portfolio-v1',
+    displayLink: 'Github',
+  },
+
+  {
+    year: '2019',
+    name: 'Guac-A-Mole',
+    company: 'Personal Project',
+    builtWith: ['HTML', 'CSS', 'JS'],
+    link: 'https://filipbagen.github.io/guac-a-mole/',
+    displayLink: 'Github',
+  },
 ];
 
 export default function Archive() {
@@ -74,12 +141,14 @@ export default function Archive() {
                   rel="noopener noreferrer"
                   className="group flex items-center gap-2"
                 >
-                  {project.link}
-                  <ArrowUpRight
-                    strokeWidth={3}
-                    size={18}
-                    className="transform transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
-                  />
+                  {project.displayLink}
+                  {project.displayLink && (
+                    <ArrowUpRight
+                      strokeWidth={3}
+                      size={18}
+                      className="transform transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
+                    />
+                  )}
                 </a>
               </TableCell>
             </TableRow>
