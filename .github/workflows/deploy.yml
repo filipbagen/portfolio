@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy React App to GitHub Pages
 
 on:
   push:
@@ -10,23 +10,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '18.x'
+          cache: 'pnpm'
 
       - name: Install dependencies
         run: |
-          curl -L https://raw.githubusercontent.com/pnpm/self-installer/master/install.js | node
+          curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm@6
           pnpm install
 
-      - name: Build project
+      - name: Build the project
         run: pnpm run build
 
       - name: Deploy to GitHub Pages
-        run: pnpm run deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
