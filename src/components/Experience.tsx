@@ -28,16 +28,18 @@ export default function Experience() {
                   <ArrowUpRight strokeWidth={3} />
                 </a>
               </div>
-              <CardDescription>Devant • JUN 2024 — PRESENT</CardDescription>
+              <CardDescription>Devant • JUN 2024 — AUG 2024</CardDescription>
             </div>
 
             <CardContent>
-              At Devant, I support the development of high-quality synthetic
-              data for Machine Learning. My tasks includes writing scripts to
-              analyze output metadata, visualizing metadata over images for
-              quality assurance, automating tests to catch potential issues, and
-              training neural networks to predict metadata accuracy. This role
-              enhanced my skills in Python, data analysis, and QA processes.
+              At Devant, I supported the development of high-quality synthetic
+              data for Machine Learning. My tasks include writing scripts to
+              analyze output metadata, visualizing metadata over images,
+              automating tests to catch potential issues, and training neural
+              networks to predict metadata accuracy. I developed a QA system
+              that automated 50% of tests and improving machine learning
+              metadata accuracy by 10%. This role enhanced my skills in Python,
+              data analysis, and QA processes.
             </CardContent>
 
             <div className="flex flex-wrap gap-3">

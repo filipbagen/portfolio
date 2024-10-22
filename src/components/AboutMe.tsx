@@ -21,7 +21,7 @@ export default function AboutMe() {
               Sweden. I am an <span className="font-semibold">eager</span>,{' '}
               <span className="font-semibold">creative</span>, and{' '}
               <span className="font-semibold">curious tech geek</span>,
-              currently in my fourth year of the M.Sc. program in Media
+              currently in my fifth year of the M.Sc. program in Media
               Technology. I've always been fascinated by the possibilities that{' '}
               <span className="font-semibold">Artificial Intelligence</span>{' '}
               offers and I've found that my passion for{' '}
@@ -51,25 +51,31 @@ export default function AboutMe() {
             <Card>
               <CardTitle>I am currently...</CardTitle>
               <CardContent>
-                ... preparing for my final year at university, where I will be
-                studying{' '}
+                ... studying{' '}
                 <span className="font-semibold">
                   Artificial Intelligence and Machine Learning
                 </span>{' '}
                 at{' '}
-                <span className="font-semibold">UC Berkeley, California</span>.
-                I am always working on my own projects and looking for an
-                internship where I can apply my skills in practice.
+                <span className="font-semibold">UC Berkeley, California</span>{' '}
+                while continuing to work on my personal projects and enhancing
+                my skills in AI, web development, and full-stack applications.
               </CardContent>
             </Card>
+
+            {/*
+              
+            UC Berkeley, California, 
+            */}
 
             <Card>
               <CardTitle>I am looking for...</CardTitle>
               <CardContent>
-                ... an opportunity to write my{' '}
-                <span className="font-semibold">Master's thesis</span> at a
-                company where I can both{' '}
-                <span className="font-semibold">learn</span> and{' '}
+                ... a full-time{' '}
+                <span className="font-semibold">
+                  software engineering position
+                </span>{' '}
+                at a leading tech company, where I can both{' '}
+                <span className="font-semibold">apply my skills</span>,{' '}
                 <span className="font-semibold">
                   gain as much experience as possible
                 </span>{' '}
