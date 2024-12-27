@@ -95,22 +95,23 @@ export default function Projects() {
         />
 
         <ProjectCard
+          title="Multi Agent Misconception Analysis"
+          description="Research project, made at UC Berkeley, that aims to predict and analyze misconceptions within a multi-agent system to better understand and explain student errors in mathematical problem-solving."
+          skills={['Exchange of Though', 'DSPy', 'APIs']}
+          githubLink="https://github.com/CS194Group/multi-agent-misconceptions"
+          externalLink="https://cs194group-misconception-webpage-home-ff9be8.streamlit.app"
+          imgSrc="assets/multi-agent-misconceptions.png"
+          imgAlt="Multi Agent Misconceptions"
+          reverse
+        />
+
+        <ProjectCard
           title="Fair Management App"
           description="Currently developing a Fair Management SaaS platform designed to streamline expo and fair organization, featuring event creation, vendor coordination, attendee management, promotional activities, and real-time analytics."
           skills={['Next.js', 'Convex DB', 'Tailwind']}
           githubLink="https://github.com/denmo530/fairify"
           imgSrc="assets/event-app.jpg"
           imgAlt="Fair Managment App"
-          reverse
-        />
-
-        <ProjectCard
-          title="Golf Performance Analysis"
-          description="Analyzed PGA Tour data from 2010-2017 using machine learning models (Random Forest and SVM) to predict tournament winners and identify key performance metrics, achieving a maximum prediction accuracy of 91%."
-          skills={['Python', 'Machine Learning', 'Feature Importance']}
-          githubLink="https://github.com/filipbagen/golf-performance-analysis"
-          imgSrc="assets/golf-analysis.jpg"
-          imgAlt="Golf Performance Analysis"
         />
       </div>
 
