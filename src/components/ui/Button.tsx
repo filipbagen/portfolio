@@ -7,7 +7,7 @@ export default function Button() {
       aria-label="Contact me"
       onClick={() => (window.location.href = 'mailto:filip.bagen@gmail.com')}
     >
-      <p className="font-semibold">Contact me</p>
+      <p className="font-bold">Contact me</p>
       <Send
         size={18}
         className="transform transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"

@@ -16,6 +16,9 @@
     --color-background: #1a202c;
     --color-primary: #2d3748; /* Example primary color for dark mode */
   }
+  .dark-mode-svg {
+    filter: invert(1) brightness(2);
+  }
 }
 
 body {
