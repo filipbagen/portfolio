@@ -15,6 +15,14 @@ import Badge from './ui/Badge';
 const projects = [
   {
     year: '2024',
+    name: 'Multi Agent Misconception Analysis',
+    company: 'School Project',
+    builtWith: ['Exchange of Though', 'DSPy', 'APIs'],
+    link: 'https://github.com/CS194Group/multi-agent-misconceptions',
+    displayLink: 'Github',
+  },
+  {
+    year: '2024',
     name: 'Course Finder',
     company: 'Personal Project',
     builtWith: ['Next.js', 'Typescript', 'Supabase'],
