@@ -16,28 +16,32 @@ export default function AboutMe() {
             <CardContent>
               <span className="font-semibold">Hey there</span> — my name is
               Filip and I'm a{' '}
-              <span className="font-semibold">soon-to-be engineer</span> in{' '}
-              <span className="font-semibold">Computer Science</span>, living in
-              Sweden. I am an <span className="font-semibold">eager</span>,{' '}
+              <span className="font-semibold">full-stack engineer</span> living
+              in Sweden. I am an <span className="font-semibold">eager</span>,{' '}
               <span className="font-semibold">creative</span>, and{' '}
-              <span className="font-semibold">curious tech geek</span>,
-              currently in my fifth year of the M.Sc. program in Media
-              Technology. I've always been fascinated by the possibilities that{' '}
-              <span className="font-semibold">Artificial Intelligence</span>{' '}
-              offers and I've found that my passion for{' '}
+              <span className="font-semibold">curious tech geek</span> with a
+              M.Sc. in Computer Science from Linköping University, where I
+              specialized in{' '}
               <span className="font-semibold">Web Development</span> and{' '}
-              <span className="font-semibold">AI </span>
+              <span className="font-semibold">AI</span>. I also studied at{' '}
+              <span className="font-semibold">UC Berkeley</span> to deepen my
+              knowledge in{' '}
+              <span className="font-semibold">
+                Artificial Intelligence and Machine Learning
+              </span>
+              . I've always been fascinated by the possibilities that{' '}
+              <span className="font-semibold">AI</span> offers and how it
               perfectly complements my love for technology.
               <br />
               <br />
-              When I'm not studying, I{' '}
+              In my work, I enjoy{' '}
               <span className="font-semibold">
-                build my own full-stack applications{' '}
+                solving complex technical challenges{' '}
               </span>
               using my skills in <span className="font-semibold">UX</span>,{' '}
               <span className="font-semibold">AI</span>, and{' '}
-              <span className="font-semibold">code development</span>. My aim is
-              to be at the center of new{' '}
+              <span className="font-semibold">full-stack development</span>. My
+              aim is to be at the center of new{' '}
               <span className="font-semibold">technological developments</span>,
               working with the great combination of{' '}
               <span className="font-semibold">software</span> and{' '}
@@ -51,14 +55,12 @@ export default function AboutMe() {
             <Card>
               <CardTitle>I am currently...</CardTitle>
               <CardContent>
-                ... studying{' '}
-                <span className="font-semibold">
-                  Artificial Intelligence and Machine Learning
-                </span>{' '}
-                at{' '}
-                <span className="font-semibold">UC Berkeley, California</span>{' '}
-                while continuing to work on my personal projects and enhancing
-                my skills in AI, web development, and full-stack applications.
+                ... working as a{' '}
+                <span className="font-semibold">Software Engineer</span> at{' '}
+                <span className="font-semibold">Netlight in Stockholm</span>,{' '}
+                where I help clients tackle complex technical challenges while
+                continuing to work on my personal projects and enhancing my
+                skills in AI, web development, and full-stack applications.
               </CardContent>
             </Card>
 
@@ -68,19 +70,15 @@ export default function AboutMe() {
             */}
 
             <Card>
-              <CardTitle>I am looking for...</CardTitle>
+              <CardTitle>In my free time...</CardTitle>
               <CardContent>
-                ... a full-time{' '}
-                <span className="font-semibold">
-                  software engineering position
-                </span>{' '}
-                at a leading tech company, where I can both{' '}
-                <span className="font-semibold">apply my skills</span>,{' '}
-                <span className="font-semibold">
-                  gain as much experience as possible
-                </span>{' '}
-                and also get the chance to{' '}
-                <span className="font-semibold">implement my own ideas</span>.
+                ... I love exploring new technologies, building side projects,
+                and staying up-to-date with the latest developments in{' '}
+                <span className="font-semibold">AI</span> and{' '}
+                <span className="font-semibold">web development</span>. I'm also
+                passionate about <span className="font-semibold">design</span>{' '}
+                and enjoy creating beautiful, user-friendly interfaces that
+                solve real problems.
               </CardContent>
             </Card>
           </div>

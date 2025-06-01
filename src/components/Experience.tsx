@@ -20,7 +20,41 @@ export default function Experience() {
           <Card>
             <div className="flex flex-col w-full">
               <div className="flex justify-between">
-                <CardTitle>Summer Internship</CardTitle>
+                <CardTitle>AI Engineer</CardTitle>
+                <a
+                  href="https://www.devant.ai"
+                  className="p-2 hover:translate-x-1 hover:-translate-y-1 transition rounded-md"
+                >
+                  <ArrowUpRight strokeWidth={3} />
+                </a>
+              </div>
+              <CardDescription>Devant • JAN 2025 — MAY 2025</CardDescription>
+            </div>
+
+            <CardContent>
+              Devant provides high-quality synthetic data for training and
+              validating machine learning models, specializing in realistic,
+              human-centric data. To address challenges in aligning their data
+              pipeline with real-world use cases, I compared their CNN-based
+              segmentation model against a Vision Transformer (ViT) model that I
+              designed and implemented. By improving the training pipeline and
+              analyzing performance across critical metrics, I highlighted key
+              trade-offs between models, enabling Devant to deliver stronger
+              solutions and move closer to offering ready-to-use models for
+              clients.
+            </CardContent>
+
+            <div className="flex flex-wrap gap-3">
+              <Badge name="Vision Transformer" />
+              <Badge name="Synthetic Data" />
+              <Badge name="R&D" />
+            </div>
+          </Card>
+
+          <Card>
+            <div className="flex flex-col w-full">
+              <div className="flex justify-between">
+                <CardTitle>Quality Assurance Engineer</CardTitle>
                 <a
                   href="https://www.devant.ai"
                   className="p-2 hover:translate-x-1 hover:-translate-y-1 transition rounded-md"
@@ -32,62 +66,28 @@ export default function Experience() {
             </div>
 
             <CardContent>
-              At Devant, I supported the development of high-quality synthetic
-              data for Machine Learning. My tasks include writing scripts to
-              analyze output metadata, visualizing metadata over images,
-              automating tests to catch potential issues, and training neural
-              networks to predict metadata accuracy. I developed a QA system
-              that automated 50% of tests and improving machine learning
-              metadata accuracy by 10%. This role enhanced my skills in Python,
-              data analysis, and QA processes.
+              Devant provides high-quality synthetic data for machine learning
+              workflows, with a focus on realism and scalability. As a Quality
+              Assurance Engineer, I improved the synthetic data pipeline by
+              automating QA processes and developing tools to evaluate metadata
+              accuracy. My work reduced manual testing by 50% and increased
+              metadata accuracy by 10%, ensuring more reliable synthetic data
+              generation. My contributions enhanced the pipeline's efficiency
+              and consistency, bringing significant value to Devant's machine
+              learning solutions.
             </CardContent>
 
             <div className="flex flex-wrap gap-3">
-              <Badge name="Quality Assurance" />
+              <Badge name="Machine Learning" />
+              <Badge name="Testing Pipelines" />
               <Badge name="Data Analysis" />
-              <Badge name="Python" />
             </div>
           </Card>
 
           <Card>
             <div className="flex flex-col w-full">
               <div className="flex justify-between">
-                <CardTitle>Project Manager</CardTitle>
-                <a
-                  href="https://www.medieteknikdagen.se"
-                  className="p-2 hover:translate-x-1 hover:-translate-y-1 transition rounded-md"
-                >
-                  <ArrowUpRight strokeWidth={3} />
-                </a>
-              </div>
-              <CardDescription>
-                Media Technology Day • APR 2022 — DEC 2022
-              </CardDescription>
-            </div>
-
-            <CardContent>
-              I managed the work fair for our program, leading a team of 14
-              colleagues using agile methodologies. By encouraging innovative
-              thinking and developing our own processes, we set a new income
-              record while reducing the project timeframe from six months to
-              three. I contributed to pricing strategy development and actively
-              sold the event to companies.
-            </CardContent>
-
-            <div className="flex flex-wrap gap-3">
-              <Badge name="Project Management" />
-              <Badge name="Sales" />
-              <Badge name="Marketing" />
-            </div>
-          </Card>
-
-          <Card>
-            <div className="flex flex-col w-full">
-              <div className="flex justify-between">
-                <CardTitle>Designer & Front-End Developer</CardTitle>
-                {/* <a href="">
-                  <ArrowUpRight strokeWidth={3} />
-                </a> */}
+                <CardTitle>Frontend Developer</CardTitle>
               </div>
               <CardDescription>
                 Unga Utvecklare • MAY 2016 — DEC 2020
@@ -95,17 +95,21 @@ export default function Experience() {
             </div>
 
             <CardContent>
-              I ran this consulting firm with a few of my friends. This is where
-              I learnt the basics of customer contact, web development and
-              design principles. I designed 50+ websites, logos, apps and
-              animations, some of which are still up and running. I occasionally
-              acted as a photographer and videographer. I feel confident both
-              behind the camera and while editing.
+              Unga Utvecklare is a consulting firm specializing in tailored
+              digital solutions. I co-founded the company and played a key role
+              in delivering a custom website for a small business seeking a
+              professional online presence. Using React and Tailwind CSS, I
+              designed and developed a visually cohesive and SEO-optimized
+              platform that aligned with the client's goals. By maintaining
+              close communication and delivering a user-friendly solution, I
+              helped the business improve customer engagement and establish a
+              strong foundation for future growth.
             </CardContent>
 
             <div className="flex flex-wrap gap-3">
-              <Badge name="UX & UI" />
-              <Badge name="Web Development" />
+              <Badge name="React" />
+              <Badge name="UI/UX" />
+              <Badge name="App Development" />
             </div>
           </Card>
         </CardContainer>

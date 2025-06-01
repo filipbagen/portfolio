@@ -86,7 +86,7 @@ export default function Projects() {
       <div className="flex flex-col md:gap-16 gap-12">
         <ProjectCard
           title="Course Finder"
-          description="SaaS tool designed to streamline course selection for graduate students at Linköping University, featuring detailed course information, personalized scheduling, and social connectivity."
+          description="Course Finder is a web-based SaaS platform designed to simplify the course selection process for graduate students. I developed the platform from concept to delivery, creating a responsive user interface with Next.js and a dynamic backend using TypeScript and Prisma. I also implemented an automated data pipeline to ensure up-to-date course information and integrated key features like schedule management and peer connectivity. The platform reduced course selection time by 50%, offering students a more efficient and user-friendly tool for academic planning."
           skills={['Next.js', 'Typescript', 'Supabase']}
           githubLink="https://github.com/filipbagen/TDDD27_2024_course_finder_next"
           externalLink="https://coursefinder.se"
