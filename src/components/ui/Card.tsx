@@ -6,19 +6,29 @@ const Card = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className="flex flex-col p-6 items-start gap-4 self-stretch rounded-3xl bg-white/80 shadow-custom dark:shadow-customDark min-w-64 dark:bg-[#14161A]/80"
+    className={`flex flex-col p-6 items-start gap-4 self-stretch rounded-3xl bg-white/80 shadow-custom dark:shadow-customDark min-w-64 dark:bg-[#14161A]/80 ${className ?? ''}`}
     {...props}
   />
 ));
 Card.displayName = 'Card';
 
-// const CardHeader = React.forwardRef<
-//   HTMLDivElement,
-//   React.HTMLAttributes<HTMLDivElement>
-// >(({ className, ...props }, ref) => (
-//   <div ref={ref} className="flex flex-col" {...props} />
-// ));
-// CardHeader.displayName = 'CardHeader';
+const CardHeader = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement> & {
+    title: string;
+    description?: React.ReactNode;
+    actions?: React.ReactNode;
+  }
+>(({ title, description, actions, className, ...props }, ref) => (
+  <div ref={ref} className={`flex flex-col w-full ${className ?? ''}`} {...props}>
+    <div className="flex justify-between">
+      <CardTitle>{title}</CardTitle>
+      {actions}
+    </div>
+    {description && <CardDescription>{description}</CardDescription>}
+  </div>
+));
+CardHeader.displayName = 'CardHeader';
 
 const CardTitle = React.forwardRef<
   HTMLParagraphElement,
@@ -64,7 +74,7 @@ CardContainer.displayName = 'CardContainer';
 
 export {
   Card,
-  //   CardHeader,
+  CardHeader,
   //   CardFooter,
   CardTitle,
   CardDescription,

@@ -7,8 +7,8 @@ interface BadgeProps {
 
 const Badge: React.FC<BadgeProps> = ({ name }) => {
   return (
-    <div className="w-fit px-3 py-0.5 rounded-full font-semibold bg-[#251434]/20 dark:bg-[#E0BDFF]/20">
-      <h6>{name}</h6>
+    <div className="w-fit px-2.5 py-0.5 rounded-full font-medium bg-[#251434]/10 dark:bg-[#E0BDFF]/10 border-2 border-[#251434]/20 dark:border-[#E0BDFF]/20">
+      <p className="text-xs">{name}</p>
     </div>
   );
 };

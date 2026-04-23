@@ -4,7 +4,7 @@ import { Card, CardTitle, CardContent } from './Card';
 interface SkillCardProps {
   imageSrc: string;
   title: string;
-  description: string;
+  description: React.ReactNode;
 }
 
 const SkillCard: React.FC<SkillCardProps> = ({

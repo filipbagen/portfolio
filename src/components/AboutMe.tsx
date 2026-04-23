@@ -16,38 +16,46 @@ export default function AboutMe() {
             <CardContent>
               <span className="font-semibold">Hey there</span> — my name is
               Filip and I'm a{' '}
-              <span className="font-semibold">full-stack engineer</span> living
-              in Sweden. I am an <span className="font-semibold">eager</span>,{' '}
+              <span className="font-semibold">full-stack developer</span> 
+              based in Stockholm. I am an <span className="font-semibold">eager</span>,{' '}
               <span className="font-semibold">creative</span>, and{' '}
               <span className="font-semibold">curious tech geek</span> with a
               M.Sc. in Computer Science from Linköping University, where I
               specialized in{' '}
-              <span className="font-semibold">Web Development</span> and{' '}
-              <span className="font-semibold">AI</span>. I also studied at{' '}
-              <span className="font-semibold">UC Berkeley</span> to deepen my
-              knowledge in{' '}
               <span className="font-semibold">
-                Artificial Intelligence and Machine Learning
+                machine learning and web development
+              </span>.
+              I also studied{' '}
+              <span className="font-semibold">Computer Science</span> at{' '}
+              <span className="font-semibold">UC Berkeley</span> with coursework
+              in{' '}
+              <span className="font-semibold">
+                Computer Vision, Applied ML, and LLM Agents
               </span>
-              . I've always been fascinated by the possibilities that{' '}
-              <span className="font-semibold">AI</span> offers and how it
-              perfectly complements my love for technology.
+              .
               <br />
               <br />
               In my work, I enjoy{' '}
               <span className="font-semibold">
-                solving complex technical challenges{' '}
+                solving complex technical challenges
+              </span>{' '}
+              across the full stack, from{' '}
+              <span className="font-semibold">
+                event-driven microservices and cloud infrastructure
+              </span>{' '}
+              to{' '}
+              <span className="font-semibold">
+                responsive, user-focused frontends
               </span>
-              using my skills in <span className="font-semibold">UX</span>,{' '}
-              <span className="font-semibold">AI</span>, and{' '}
-              <span className="font-semibold">full-stack development</span>. My
-              aim is to be at the center of new{' '}
-              <span className="font-semibold">technological developments</span>,
-              working with the great combination of{' '}
-              <span className="font-semibold">software</span> and{' '}
-              <span className="font-semibold">science</span>. My focus is to
-              broaden my knowledge in the implementation of new innovations and
-              <span className="font-semibold"> technological creations</span>.
+              . I'm drawn to early-stage projects where there's a lot to figure
+              out and build, and I have a genuine passion for{' '}
+              <span className="font-semibold">AI</span> and how it can be
+              applied to real-world problems. Colleagues describe me as{' '}
+              <span className="font-semibold">
+                positive and easy to work with
+              </span>
+              , quick to involve the right people, and always focused on what
+              benefits the <span className="font-semibold">end user</span>.
             </CardContent>
           </Card>
 
@@ -56,29 +64,34 @@ export default function AboutMe() {
               <CardTitle>I am currently...</CardTitle>
               <CardContent>
                 ... working as a{' '}
-                <span className="font-semibold">Software Engineer</span> at{' '}
-                <span className="font-semibold">Netlight in Stockholm</span>,{' '}
-                where I help clients tackle complex technical challenges while
-                continuing to work on my personal projects and enhancing my
-                skills in AI, web development, and full-stack applications.
+                <span className="font-semibold">
+                  Consultant at Netlight in Stockholm
+                </span>
+                , where I help clients tackle complex technical challenges. So
+                far, I've worked with scaleups in{' '}
+                <span className="font-semibold">greentech</span> and{' '}
+                <span className="font-semibold">legal tech</span>, and I have
+                shipped systems in everything from{' '}
+                <span className="font-semibold">
+                  event-driven microservices
+                </span>{' '}
+                and <span className="font-semibold">frontend applications</span>{' '}
+                to <span className="font-semibold">CI/CD pipelines</span> and{' '}
+                <span className="font-semibold">cloud infrastructure</span>. I
+                enjoy early-stage projects where there's a lot to figure out and
+                build, especially when it comes to{' '}
+                <span className="font-semibold">
+                  frontend-heavy, user-focused development
+                </span>{' '}
+                with <span className="font-semibold">React</span> and{' '}
+                <span className="font-semibold">TypeScript</span>.
               </CardContent>
             </Card>
-
-            {/*
-              
-            UC Berkeley, California, 
-            */}
 
             <Card>
               <CardTitle>In my free time...</CardTitle>
               <CardContent>
-                ... I love exploring new technologies, building side projects,
-                and staying up-to-date with the latest developments in{' '}
-                <span className="font-semibold">AI</span> and{' '}
-                <span className="font-semibold">web development</span>. I'm also
-                passionate about <span className="font-semibold">design</span>{' '}
-                and enjoy creating beautiful, user-friendly interfaces that
-                solve real problems.
+              ... I love exploring new technologies, building side projects, and staying up-to-date with the latest developments in <span className="font-semibold">AI</span> and <span className="font-semibold">web development</span>. I'm also passionate about <span className="font-semibold">design</span> and enjoy creating beautiful, user-friendly interfaces that solve real problems. Outside of tech, I like to stay active through <span className="font-semibold">golf</span>, <span className="font-semibold">climbing</span>, and <span className="font-semibold">running</span>.
               </CardContent>
             </Card>
           </div>

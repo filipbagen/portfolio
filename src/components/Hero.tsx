@@ -17,16 +17,14 @@ export default function Hero() {
 
         <div className="flex flex-col items-center justify-center gap-3 max-w-[385px] md:items-start">
           <object data="assets/signature.svg" width="292" height="84" />
-          <p className="text-center md:text-start">
+          <p className="text-center md:text-start pb-2">
             I am a <span className="font-semibold">creative and curious</span>{' '}
-            software engineer working in{' '}
+            full-stack developer working in{' '}
             <span className="font-semibold">Stockholm</span>, specializing in{' '}
-            <span className="font-semibold">AI and Full-Stack Development</span>
+            <span className="font-semibold">TypsScript, React</span>,
+            with a deep interest in{' '}
+            <span className="font-semibold">AI and Machine Learning</span>.
           </p>
-
-          {/* I am a creative and curious tech geek in the M.Sc. program in Computer Science, majoring in ML and Web Development. */}
-
-          <div className="w-40 h-0.5 bg-black/10 dark:bg-white/10 rounded-full" />
 
           <Button />
         </div>

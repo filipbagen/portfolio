@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom';
 import Header from './ui/Header';
 import Badge from './ui/Badge';
 import { Github, ArrowUpRight } from 'lucide-react';
-import { Card, CardContainer, CardContent, CardTitle } from './ui/Card';
+import { Card, CardContainer, CardContent, CardHeader } from './ui/Card';
 
 interface ProjectCardProps {
   title: string;
-  description: string;
+  date?: string;
+  description: React.ReactNode;
   skills: string[];
   githubLink?: string;
   externalLink?: string;
@@ -19,6 +20,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
+  date,
   description,
   skills,
   githubLink,
@@ -35,25 +37,35 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     >
       <div className="flex-1">
         <Card className="h-auto">
-          <div className="flex flex-row justify-between w-full">
-            <CardTitle>{title}</CardTitle>
-            <div className="flex gap-2">
-              {githubLink && (
-                <a href={githubLink} rel="noopener noreferrer">
-                  <Github size={22} />
-                </a>
-              )}
-              {externalLink && (
-                <a href={externalLink} rel="noopener noreferrer">
-                  <ArrowUpRight size={22} />
-                </a>
-              )}
-            </div>
-          </div>
+          <CardHeader
+            title={title}
+            description={date}
+            actions={
+              <div className="flex gap-2">
+                {githubLink && (
+                  <a href={githubLink} rel="noopener noreferrer">
+                    <Github strokeWidth={2} />
+                  </a>
+                )}
+                {externalLink && (
+                  <a
+                    href={externalLink}
+                    rel="noopener noreferrer"
+                    className="group p-1 rounded-md"
+                  >
+                    <ArrowUpRight
+                      strokeWidth={3}
+                      className="transform transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
+                    />
+                  </a>
+                )}
+              </div>
+            }
+          />
 
           <CardContent>{description}</CardContent>
 
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-1.5">
             {skills.map((skill, index) => (
               <Badge key={index} name={skill} />
             ))}
@@ -76,18 +88,49 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
 export default function Projects() {
   return (
-    <div className="flex p-4 md:pb-12 pt-12 md:px-12 flex-col self-stretch md:rounded-[56px] rounded-3xl bg-custom-gradient-projects dark:bg-custom-gradient-projects-dark w-full">
+    <div className="flex gap-8 p-4 md:pb-12 pt-12 md:px-12 flex-col self-stretch md:rounded-[56px] rounded-3xl bg-custom-gradient-projects dark:bg-custom-gradient-projects-dark w-full">
       <Header
         badge="Projects"
         title="What I Have Done"
         paragraph="These are my most recent projects that I'm most proud of."
       />
 
-      <div className="flex flex-col md:gap-16 gap-12">
+      <div className="flex flex-col md:gap-14 gap-10">
         <ProjectCard
           title="Course Finder"
-          description="Course Finder is a web-based SaaS platform designed to simplify the course selection process for graduate students. I developed the platform from concept to delivery, creating a responsive user interface with Next.js and a dynamic backend using TypeScript and Prisma. I also implemented an automated data pipeline to ensure up-to-date course information and integrated key features like schedule management and peer connectivity. The platform reduced course selection time by 50%, offering students a more efficient and user-friendly tool for academic planning."
-          skills={['Next.js', 'Typescript', 'Supabase']}
+          date="Jan 2024 — Dec 2025"
+          description={
+            <>
+              Course Finder is a web-based{' '}
+              <span className="font-semibold">SaaS platform</span> I built to
+              simplify the course selection process for graduate students at
+              Linköping University. I developed the platform end to end, from
+              concept to production, using{' '}
+              <span className="font-semibold">Next.js</span>,{' '}
+              <span className="font-semibold">TypeScript</span>, and{' '}
+              <span className="font-semibold">Prisma</span>, with{' '}
+              <span className="font-semibold">Supabase</span> for auth and{' '}
+              <span className="font-semibold">Stripe</span> for subscription
+              management. I also implemented an automated{' '}
+              <span className="font-semibold">ETL pipeline</span> via GitHub
+              Actions that ingests and refreshes course data monthly, and
+              integrated social features like schedule management and peer
+              connectivity. The platform{' '}
+              <span className="font-semibold">
+                reduced course selection time by 50%
+              </span>{' '}
+              and laid a clear path for AI-powered course recommendations.
+            </>
+          }
+          skills={[
+            'Next.js',
+            'TypeScript',
+            'Prisma',
+            'Supabase',
+            'PostgreSQL',
+            'Stripe',
+            'GitHub Actions',
+          ]}
           githubLink="https://github.com/filipbagen/TDDD27_2024_course_finder_next"
           externalLink="https://coursefinder.se"
           imgSrc="assets/course-finder.jpg"
@@ -95,23 +138,105 @@ export default function Projects() {
         />
 
         <ProjectCard
-          title="Multi Agent Misconception Analysis"
-          description="Research project, made at UC Berkeley, that aims to predict and analyze misconceptions within a multi-agent system to better understand and explain student errors in mathematical problem-solving."
-          skills={['Exchange of Though', 'DSPy', 'APIs']}
-          githubLink="https://github.com/CS194Group/multi-agent-misconceptions"
-          externalLink="https://cs194group-misconception-webpage-home-ff9be8.streamlit.app"
-          imgSrc="assets/multi-agent-misconceptions.png"
-          imgAlt="Multi Agent Misconceptions"
+          title="Looks & Books"
+          date="Oct 2024 — Feb 2025"
+          description={
+            <>
+              Looks &amp; Books is a beauty business that previously used a third-party
+              booking system which redirected users to an external site, creating a
+              disjointed experience. I designed and developed a{' '}
+              <span className="font-semibold">custom booking platform</span> from scratch
+              using <span className="font-semibold">React.js</span> and{' '}
+              <span className="font-semibold">Node.js</span>, with a strong focus on
+              design, accessibility, and performance. Since the booking platform had no
+              API, I{' '}
+              <span className="font-semibold">
+                reverse-engineered the existing booking flow
+              </span>{' '}
+              by analyzing network requests and built a backend integration using Axios.
+              The result was a fully integrated, visually cohesive booking experience
+              that eliminated the need for an external page, simplified the user
+              journey, and helped{' '}
+              <span className="font-semibold">increase bookings and revenue</span> for
+              the salon.
+            </>
+          }
+          skills={[
+            'React',
+            'Node.js',
+            'Axios',
+            'UI/UX',
+            'Frontend Design',
+          ]}
+          githubLink='https://github.com/filipbagen/looks-and-books'
+          externalLink='https://looksandbooks.se'
+          imgSrc="assets/looks-and-books.png"
+          imgAlt="Looks & Books"
           reverse
         />
 
         <ProjectCard
-          title="Fair Management App"
-          description="Currently developing a Fair Management SaaS platform designed to streamline expo and fair organization, featuring event creation, vendor coordination, attendee management, promotional activities, and real-time analytics."
-          skills={['Next.js', 'Convex DB', 'Tailwind']}
-          githubLink="https://github.com/denmo530/fairify"
-          imgSrc="assets/event-app.jpg"
-          imgAlt="Fair Managment App"
+          title="Multi-Agent Misconception Analysis"
+          date="Aug 2024 — Dec 2024"
+          description={
+            <>
+              A research project built at{' '}
+              <span className="font-semibold">UC Berkeley</span> exploring how
+              LLM agents can collaborate to improve learning outcomes. I
+              developed a <span className="font-semibold">multi-agent system</span>{' '}
+              to predict and analyze student misconceptions in mathematical
+              problem-solving, using the{' '}
+              <span className="font-semibold">
+                Exchange-of-Thought (EoT) framework
+              </span>
+              , <span className="font-semibold">dspy</span>, and the{' '}
+              <span className="font-semibold">OpenAI API</span>. The system
+              processes student responses, generates likely misconceptions, and
+              evaluates reasoning through{' '}
+              <span className="font-semibold">semantic analysis</span>. By
+              linking agents with distinct roles — like{' '}
+              <span className="font-semibold">Memory</span> and{' '}
+              <span className="font-semibold">Debate</span> - the system provides
+              tailored explanations for incorrect answers, helping educators
+              address student misunderstandings.
+            </>
+          }
+          skills={[
+            'Python',
+            'DSPy',
+            'OpenAI API',
+            'Multi-Agent Systems',
+            'Exchange-of-Thought',
+          ]}
+          githubLink="https://github.com/CS194Group/multi-agent-misconceptions"
+          externalLink="https://cs194group-misconception-webpage-home-ff9be8.streamlit.app"
+          imgSrc="assets/multi-agent-misconceptions.png"
+          imgAlt="Multi Agent Misconceptions"
+        />
+
+        <ProjectCard
+          title="Synthetic Data for Real-World Segmentation (Thesis)"
+          date="Jan 2025 — Jun 2025"
+          description={
+            <>
+              My master's thesis, published on DiVA, benchmarking{' '}
+              <span className="font-semibold">Vision Transformer</span>{' '}
+              architectures against{' '}
+              <span className="font-semibold">CNN baselines</span> for
+              synthetic-to-real segmentation at Devant. The ViT model achieved{' '}
+              <span className="font-semibold">4.3% higher mIoU</span> while being{' '}
+              <span className="font-semibold">9% more lightweight</span> and
+              running at <span className="font-semibold">28% faster FPS</span>.
+              The work highlighted critical trade-offs between model
+              architectures and contributed to Devant's ability to deliver
+              stronger, production-ready solutions.
+            </>
+          }
+          skills={['ViT', 'CNN', 'Synthetic Data', 'Computer Vision', 'Python']}
+          externalLink="https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1970762&dswid=-7822"
+          imgSrc="assets/synthetic-data-thesis.png"
+          imgAlt="Synthetic Data Thesis"
+          reverse
         />
       </div>
 
