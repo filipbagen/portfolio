@@ -17,7 +17,7 @@ const projects = [
     year: '2024',
     name: 'Multi Agent Misconception Analysis',
     company: 'School Project',
-    builtWith: ['Exchange of Though', 'DSPy', 'APIs'],
+    tags: ['Exchange of Though', 'DSPy', 'APIs'],
     link: 'https://github.com/CS194Group/multi-agent-misconceptions',
     displayLink: 'Github',
   },
@@ -25,7 +25,7 @@ const projects = [
     year: '2024',
     name: 'Course Finder',
     company: 'Personal Project',
-    builtWith: ['Next.js', 'Typescript', 'Supabase'],
+    tags: ['Next.js', 'Typescript', 'Supabase'],
     link: 'https://www.coursefinder.se',
     displayLink: 'coursefinder.se',
   },
@@ -33,7 +33,7 @@ const projects = [
     year: '2024',
     name: 'Fair Management App',
     company: 'Personal Project',
-    builtWith: ['Next.js', 'Convex DB', 'Tailwind CSS'],
+    tags: ['Next.js', 'Convex DB', 'Tailwind CSS'],
     link: '',
     displayLink: '',
   },
@@ -41,7 +41,7 @@ const projects = [
     year: '2024',
     name: 'Golf Performance Analysis',
     company: 'School Project',
-    builtWith: ['Python', 'Machine Learning', 'Feature Importance'],
+    tags: ['Python', 'Machine Learning', 'Feature Importance'],
     link: 'https://github.com/filipbagen/golf-performance-analysis',
     displayLink: 'Github',
   },
@@ -49,7 +49,7 @@ const projects = [
     year: '2024',
     name: 'emelielarsson.se',
     company: 'Freelance Work',
-    builtWith: ['React', 'Tailwind CSS'],
+    tags: ['React', 'Tailwind CSS'],
     link: 'https://emelielarsson.se',
     displayLink: 'emelielarsson.se',
   },
@@ -57,7 +57,7 @@ const projects = [
     year: '2023',
     name: 'Facial Recognition',
     company: 'School Project',
-    builtWith: ['PCA', 'SVM', 'Eigenfaces'],
+    tags: ['PCA', 'SVM', 'Eigenfaces'],
     link: 'https://github.com/filipbagen/facial-recognition',
     displayLink: 'Github',
   },
@@ -65,7 +65,7 @@ const projects = [
     year: '2023',
     name: 'Rocket Simulation',
     company: 'School Project',
-    builtWith: ['Three.js', 'RK4', 'Physics'],
+    tags: ['Three.js', 'RK4', 'Physics'],
     link: 'https://github.com/filipbagen/rocket-simulation',
     displayLink: 'Github',
   },
@@ -74,7 +74,7 @@ const projects = [
     year: '2023',
     name: 'Virtual Guide',
     company: 'School Project',
-    builtWith: ['Python', 'Hugging Face', 'pyqt6'],
+    tags: ['Python', 'Hugging Face', 'pyqt6'],
     link: 'https://github.com/filipbagen/virtual-guide',
     displayLink: 'Github',
   },
@@ -82,7 +82,7 @@ const projects = [
     year: '2022',
     name: 'Looks & Books',
     company: 'Freelance Work',
-    builtWith: ['React', 'Typescript'],
+    tags: ['React', 'Typescript'],
     link: 'https://looksandbooks.se',
     displayLink: 'looksandbooks.se',
   },
@@ -90,7 +90,7 @@ const projects = [
     year: '2022',
     name: 'Personal Website v1',
     company: 'Personal Project',
-    builtWith: ['React', 'Styled Components'],
+    tags: ['React', 'Styled Components'],
     link: 'https://github.com/filipbagen/portfolio-v1',
     displayLink: 'Github',
   },
@@ -99,7 +99,7 @@ const projects = [
     year: '2019',
     name: 'Guac-A-Mole',
     company: 'Personal Project',
-    builtWith: ['HTML', 'CSS', 'JS'],
+    tags: ['HTML', 'CSS', 'JS'],
     link: 'https://filipbagen.github.io/guac-a-mole/',
     displayLink: 'Github',
   },
@@ -137,8 +137,8 @@ export default function Archive() {
               <TableCell className="font-semibold">{project.name}</TableCell>
               <TableCell>{project.company}</TableCell>
               <TableCell className="flex gap-2">
-                {project.builtWith.map((skill) => (
-                  <Badge key={skill} name={skill} />
+                {project.tags.map((tag) => (
+                  <Badge key={tag} name={tag} />
                 ))}
               </TableCell>
               <TableCell>

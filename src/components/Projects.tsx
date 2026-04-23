@@ -10,7 +10,7 @@ interface ProjectCardProps {
   title: string;
   date?: string;
   description: React.ReactNode;
-  skills: string[];
+  tags: string[];
   githubLink?: string;
   externalLink?: string;
   imgSrc: string;
@@ -22,7 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   date,
   description,
-  skills,
+  tags,
   githubLink,
   externalLink,
   imgSrc,
@@ -66,8 +66,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <CardContent>{description}</CardContent>
 
           <div className="flex flex-wrap gap-1.5">
-            {skills.map((skill, index) => (
-              <Badge key={index} name={skill} />
+            {tags.map((tag, index) => (
+              <Badge key={index} name={tag} />
             ))}
           </div>
         </Card>
@@ -88,7 +88,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
 export default function Projects() {
   return (
-    <div className="flex gap-8 p-4 md:pb-12 pt-12 md:px-12 flex-col self-stretch md:rounded-[56px] rounded-3xl bg-custom-gradient-projects dark:bg-custom-gradient-projects-dark w-full">
+    <div className="flex gap-8 p-4 md:pb-12 pt-12 md:px-12 flex-col self-stretch md:rounded-4xl rounded-3xl bg-custom-gradient-projects dark:bg-custom-gradient-projects-dark w-full">
       <Header
         badge="Projects"
         title="What I Have Done"
@@ -122,7 +122,7 @@ export default function Projects() {
               and laid a clear path for AI-powered course recommendations.
             </>
           }
-          skills={[
+          tags={[
             'Next.js',
             'TypeScript',
             'Prisma',
@@ -161,7 +161,7 @@ export default function Projects() {
               the salon.
             </>
           }
-          skills={[
+          tags={[
             'React',
             'Node.js',
             'Axios',
@@ -201,7 +201,7 @@ export default function Projects() {
               address student misunderstandings.
             </>
           }
-          skills={[
+          tags={[
             'Python',
             'DSPy',
             'OpenAI API',
@@ -232,7 +232,7 @@ export default function Projects() {
               stronger, production-ready solutions.
             </>
           }
-          skills={['ViT', 'CNN', 'Synthetic Data', 'Computer Vision', 'Python']}
+          tags={['ViT', 'CNN', 'Synthetic Data', 'Computer Vision', 'Python']}
           externalLink="https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1970762&dswid=-7822"
           imgSrc="assets/synthetic-data-thesis.png"
           imgAlt="Synthetic Data Thesis"
@@ -242,7 +242,7 @@ export default function Projects() {
 
       <Link
         to="/archive"
-        className="flex items-center gap-2 w-fit py-2 px-4 transition rounded-md cursor-pointer hover:bg-[#251434]/5 group font-semibold"
+        className="flex items-center gap-2 w-fit py-2 px-4 transition rounded-md cursor-pointer hover:bg-primary/5 group font-semibold"
       >
         View Full Project Archive
         <ArrowUpRight

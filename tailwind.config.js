@@ -32,11 +32,19 @@ export default {
         customDark:
           '0px 0px 0px 1px rgba(26, 32, 44, 0.10), 0px 3px 6px 0px rgba(26, 32, 44, 0.12), 0px -4px 0px 0px rgba(26, 32, 44, 0.08) inset',
       },
+      borderRadius: {
+        '4xl': '3.5rem',
+      },
       colors: {
-        // Add your dark mode color variables
-        'custom-dark': '#1a202c',
-        'custom-dark-bg': '#2d3748',
-        'custom-dark-text': '#a0aec0',
+        primary: '#251434',
+        'primary-light': '#89236C',
+        'primary-dark': '#E0BDFF',
+        secondary: '#233989',
+        'secondary-light': '#4A5FBA',
+        'secondary-dark': '#5A7FFF',
+        accent: '#E0BDFF',
+        'accent-light': '#F0D7FF',
+        'accent-dark': '#C89EEF',
       },
     },
   },

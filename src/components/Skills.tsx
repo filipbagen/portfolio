@@ -13,7 +13,7 @@ export default function Skills() {
   };
 
   return (
-    <div className="flex p-4 py-16 md:px-12 px-4 flex-col items-center md:items-start bg-custom-gradient-skills dark:bg-custom-gradient-skills-dark md:rounded-[56px] rounded-3xl">
+    <div className="flex p-4 py-16 md:px-12 px-4 flex-col items-center md:items-start bg-custom-gradient-skills dark:bg-custom-gradient-skills-dark md:rounded-4xl rounded-3xl">
       <Header
         badge="Skills"
         title="What I Can Do"

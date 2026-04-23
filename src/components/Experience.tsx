@@ -204,11 +204,11 @@ export default function Experience() {
     useBalancedColumns(experienceItems);
 
   return (
-    <div className="flex p-4 md:pb-12 pt-12 md:px-28 flex-col self-stretch md:md:rounded-[56px] rounded-3xl bg-custom-gradient-experience dark:bg-custom-gradient-experience-dark w-full">
+    <div className="flex p-4 md:pb-12 pt-12 md:px-28 flex-col self-stretch md:rounded-4xl rounded-3xl bg-custom-gradient-experience dark:bg-custom-gradient-experience-dark w-full">
       <Header badge="Experience" title="Where I Have Worked" />
 
       <div className="flex flex-col md:gap-11 gap-6 max-w-[980px] mx-auto w-full">
-        <div className="relative mx-auto h-fit p-3 self-stretch rounded-3xl border border-[#89236C]/10 dark:border-[#233989]/10 bg-[#89236C]/5 dark:bg-[#233989]/5">
+        <div className="relative mx-auto h-fit p-3 self-stretch rounded-3xl border border-primary-light/10 dark:border-secondary/10 bg-primary-light/5 dark:bg-secondary/5">
           <div className="flex flex-col md:flex-row gap-4">
             <div className="flex flex-col gap-4 flex-1">
               {leftColumn.map((item) => (
@@ -247,7 +247,7 @@ export default function Experience() {
 
         <a
           href="assets/doc/resume.pdf"
-          className="flex items-center gap-2 w-fit py-2 px-4 transition rounded-md cursor-pointer hover:bg-[#251434]/5 group font-semibold"
+          className="flex items-center gap-2 w-fit py-2 px-4 transition rounded-md cursor-pointer hover:bg-primary/5 group font-semibold"
         >
           View resume
           <ArrowUpRight

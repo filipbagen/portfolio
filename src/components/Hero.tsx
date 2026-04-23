@@ -2,7 +2,7 @@ import Button from './ui/Button';
 
 export default function Hero() {
   return (
-    <div className="w-full md:h-[840px] h-[720px] p-4 flex justify-center items-center self-stretch md:md:rounded-[56px] rounded-3xl bg-custom-gradient dark:bg-custom-gradient-dark">
+    <div className="w-full md:h-[840px] h-[720px] p-4 flex justify-center items-center self-stretch md:rounded-4xl rounded-3xl bg-custom-gradient dark:bg-custom-gradient-dark">
       <div className="flex gap-10 flex-col md:flex-row items-center">
         <div className="relative w-56 h-56">
           <div className="absolute w-56 h-56 bg-blue-200 rounded-full -top-3"></div>
