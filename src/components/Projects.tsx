@@ -97,6 +97,34 @@ export default function Projects() {
 
       <div className="flex flex-col md:gap-14 gap-10">
         <ProjectCard
+          title="Amex Tracker"
+          date="Feb 2026"
+          description={
+            <>
+              My partner and I wanted to bring clarity to our monthly Amex
+              invoices, which are dense PDFs with no built-in categorization. I
+              built a tracker from scratch using{' '}
+              <span className="font-semibold">Lovable</span> and{' '}
+              <span className="font-semibold">Claude Code</span>, relying heavily
+              on agentic coding to iterate fast and experiment with new tools.
+              When a PDF invoice is uploaded, an{' '}
+              <span className="font-semibold">AI intelligently scans</span> each
+              entry and automatically extracts the date, purchaser, merchant name,
+              and category. The result is a visual dashboard with{' '}
+              <span className="font-semibold">
+                category breakdowns, individual spend tracking, monthly trends, and
+                total cashback
+              </span>
+              , transforming a confusing invoice into actionable insights.
+            </>
+          }
+          tags={['React', 'TypeScript', 'AI/ML', 'Claude Code', 'Lovable']}
+          githubLink="https://github.com/filipbagen/amex-tracker"
+          imgSrc="assets/amex-tracker.png"
+          imgAlt="Amex Tracker"
+        />
+
+        <ProjectCard
           title="Course Finder"
           date="Jan 2024 — Dec 2025"
           description={
@@ -135,43 +163,6 @@ export default function Projects() {
           externalLink="https://coursefinder.se"
           imgSrc="assets/course-finder.jpg"
           imgAlt="Course Finder"
-        />
-
-        <ProjectCard
-          title="Looks & Books"
-          date="Oct 2024 — Feb 2025"
-          description={
-            <>
-              Looks &amp; Books is a beauty business that previously used a third-party
-              booking system which redirected users to an external site, creating a
-              disjointed experience. I designed and developed a{' '}
-              <span className="font-semibold">custom booking platform</span> from scratch
-              using <span className="font-semibold">React.js</span> and{' '}
-              <span className="font-semibold">Node.js</span>, with a strong focus on
-              design, accessibility, and performance. Since the booking platform had no
-              API, I{' '}
-              <span className="font-semibold">
-                reverse-engineered the existing booking flow
-              </span>{' '}
-              by analyzing network requests and built a backend integration using Axios.
-              The result was a fully integrated, visually cohesive booking experience
-              that eliminated the need for an external page, simplified the user
-              journey, and helped{' '}
-              <span className="font-semibold">increase bookings and revenue</span> for
-              the salon.
-            </>
-          }
-          tags={[
-            'React',
-            'Node.js',
-            'Axios',
-            'UI/UX',
-            'Frontend Design',
-          ]}
-          githubLink='https://github.com/filipbagen/looks-and-books'
-          externalLink='https://looksandbooks.se'
-          imgSrc="assets/looks-and-books.png"
-          imgAlt="Looks & Books"
           reverse
         />
 
